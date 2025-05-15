@@ -1,7 +1,15 @@
 import Image from "next/image"
 import { cn } from "@/lib/utils";
 
-export function FeaturesSectionWithHoverEffects({features}) {
+export function FeaturesSectionWithHoverEffects(props) {
+
+  let features: {
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+    index: number;
+  } = props.features;
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-1 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
