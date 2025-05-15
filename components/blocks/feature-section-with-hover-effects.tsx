@@ -1,15 +1,14 @@
 import Image from "next/image"
 import { cn } from "@/lib/utils";
 
-export function FeaturesSectionWithHoverEffects(props) {
+interface featureInterface {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  index: number;
+}
 
-  const features: {
-    title: string;
-    description: string;
-    icon: React.ReactNode;
-    index: number;
-  } = props.features;
-
+export function FeaturesSectionWithHoverEffects({features}: featureInterface) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-1 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
@@ -24,12 +23,7 @@ const Feature = ({
   description,
   icon,
   index,
-}: {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-  index: number;
-}) => {
+}: featureInterface) => {
   return (
     <div
       className={cn(
