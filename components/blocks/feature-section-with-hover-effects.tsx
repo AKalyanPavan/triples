@@ -4,11 +4,11 @@ import { cn } from "@/lib/utils";
 interface featureInterface {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: string;
   index: number;
 }
 
-export function FeaturesSectionWithHoverEffects({features}: featureInterface) {
+export function FeaturesSectionWithHoverEffects({features} : featureInterface) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-1 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
