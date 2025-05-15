@@ -63,7 +63,7 @@ export const fold5 = [
         author: {
             name: "Kavitha Ramesh",
             handle: "Business Owner, Erode",
-            avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
         },
         text: "As a small business owner, my electricity costs were high. After installing a solar system with Triples Energy, my monthly bills have dropped by over 80%. Their team was quick and professional, and the installation was done in just 3 weeks. I'm thrilled with the savings and eco-friendly benefits!",
         href: ""
@@ -72,7 +72,7 @@ export const fold5 = [
         author: {
             name: "Dr. Shankar, MD",
             handle: "Hospital Owner, Tirupur",
-            avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+            avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
         },
         text: "Energy consumption was a big concern for our hospital. Triples Energy helped us install a high-efficiency solar system. We've saved a lot on energy, and the system has worked better than expected. Their team made the installation process smooth, and now we're contributing to a greener future!",
         href: ""
@@ -90,7 +90,7 @@ export const fold5 = [
         author: {
             name: "Madhavi and Rajan",
             handle: "Resident, Madurai",
-            avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
         },
         text: "As farmers, we always relied on the sun, but now with our solar system from Triples Energy, we rely on it even more. Our electricity bills have dropped a lot, and the option to sell back excess energy has been great. The process was simple and efficient, and we're happy we made this choice.",
         href: ""
@@ -99,7 +99,7 @@ export const fold5 = [
         author: {
             name: "Subramaniam",
             handle: "Entrepreneur, Salem",
-            avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+            avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
         },
         text: "Switching to solar for our office was one of the best decisions we've made. Triples Energy helped with the rooftop installation, and the results have been amazing. Our energy bills have dropped by 85%, and the system works perfectly. The government subsidies and EMI plans made the switch affordable.",
         href: ""

@@ -5,7 +5,7 @@ import { fold5 } from "./Variables.js"
 
 export default function Fold5() {
 	return(
-		<div className="my-[100px]">
+		<div className="mt-[100px] mb-[50px]">
 			<ShiningText customStyle="sm:text-[48px] text-[36px] text-center font-medium" textLeft={"Customer "} textRight={"Testimonials"} />
 			<TestimonialsSection
 		      title="Trusted by developers worldwide"

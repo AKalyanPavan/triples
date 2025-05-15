@@ -17,7 +17,7 @@ export function TestimonialsSection({
   return (
     <section className={cn(
       "bg-background text-foreground",
-      "py-5 px-0",
+      "py-10 px-0",
       className
     )}>
       <div className="mx-auto flex max-w-container flex-col items-center gap-4 text-center sm:gap-16">
