@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function FeaturesSectionWithHoverEffects(props) {
 
-  let features: {
+  const features: {
     title: string;
     description: string;
     icon: React.ReactNode;
