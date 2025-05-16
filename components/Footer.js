@@ -26,7 +26,7 @@ export default function Footer() {
 						<span>Marketing</span>
 						<span>Financial</span>
 					</div>
-					<div className="flex flex-col gap-[24px] sm:w-[300px] max-md:col-start-2">
+					<div className="flex flex-col gap-[24px] sm:w-[300px] max-md:col-start-2 max-md:ml-[-20px]">
 						<div className="text-[#1E62AF] font-bold">Contact Us</div>
 						<a href="tel:+91 7418059444">
 							<div className="flex items-start gap-[20px]">
