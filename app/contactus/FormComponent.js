@@ -71,7 +71,7 @@ export default function FormComponent() {
 	    let fMessage = document.getElementById("fmessage");
 
 	    let isError = false;
-
+	    
 	    if (fPropertyRequirement.value == "none") {
 	    	errorPropertyRequirement.classList.remove("invisible");
 	        isError = true;
@@ -125,7 +125,7 @@ export default function FormComponent() {
 
 	function sendEmail(propertyRequirement, name, email, phonenumber, location, placeofIntrest) {
 
-		const zapikey = process.env.REACT_APP_ZAPIKEY;
+		// const zapikey = process.env.REACT_APP_ZAPIKEY;
 
 		const paramsObject = {
 			full_name: name,
@@ -226,7 +226,7 @@ export default function FormComponent() {
 				<div className="mb-[10px]">
 					<div className="mb-[10px]">Property Type *</div>
 					<select className="border-solid border-[1.5px] border-[#00000040] p-[5px] rounded-[5px] w-full" name="fpropertyrequirement" id="fpropertyrequirement" onClick={() => onSelectClicked("errorPropertyRequirement")}>
-					    <option value="villa" selected>Villa</option>
+					    <option value="villa">Villa</option>
 					    <option value="apartment">Apartment</option>
 					    <option value="commercial">Commercial</option>
 					</select>
