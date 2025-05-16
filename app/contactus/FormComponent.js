@@ -71,7 +71,7 @@ export default function FormComponent() {
 	    let fMessage = document.getElementById("fmessage");
 
 	    let isError = false;
-	    
+
 	    if (fPropertyRequirement.value == "none") {
 	    	errorPropertyRequirement.classList.remove("invisible");
 	        isError = true;
@@ -257,7 +257,7 @@ export default function FormComponent() {
 				            </svg>
 				        </div>
 				        <div className="text-[30px] font-semibold my-[20px]">Thank You!</div>
-				        <div>We'll reach You Out Soon!</div>
+				        <div>We&apos;ll reach You Out Soon!</div>
 				        <div className="bg-[#dc3737] text-[#FFFFFF] cursor-pointer rounded-[5px] my-[20px] w-max mx-auto px-[20px] font-medium" onClick={() => closeThankYouModal()}>Close</div>
 				    </div>
 				</div>
