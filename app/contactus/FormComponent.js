@@ -92,8 +92,8 @@ export default function FormComponent() {
 	        isError = true;
 	    }
 
-	    if (!flocation.value || flocation.value < 1) {
-	    	errorLocation.classList.remove("invisible");
+	    if (!flocation.value.trim()) {
+	        errorLocation.classList.remove("invisible");
 	        isError = true;
 	    }
 
@@ -219,7 +219,7 @@ export default function FormComponent() {
 				<div className="">
 				    <div id="location" className="flex border-solid border-[1.5px] border-[#00000040] rounded-[5px] h-[50px] items-center hover:border-[#00000040]" onClick={() => onInputClicked("location", "errorLocation")}>
 				        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Location</label>
-				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("location")} placeholder="" type="number" id="flocation" name="flocation" />
+				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("location")} placeholder="" id="flocation" name="flocation" />
 				    </div>
 				    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorLocation">Please provide valid location</div>
 				</div>
@@ -233,9 +233,9 @@ export default function FormComponent() {
 					<div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorPropertyRequirement">Please select a property requirement</div>
 				</div>
 				<div className="">
-				    <div id="placeofInterest" className="flex border-solid border-[1.5px] border-[#00000040] rounded-[5px] h-[50px] items-center hover:border-[#00000040]" onClick={() => onInputClicked("placeofInterest", "errorMessage")}>
-				        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Place of Interest</label>
-				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("placeofInterest")} placeholder="" type="text" id="fmessage" name="fmessage" />
+				    <div id="message" className="flex border-solid border-[1.5px] border-[#00000040] rounded-[5px] h-[50px] items-center hover:border-[#00000040]" onClick={() => onInputClicked("message", "errorMessage")}>
+				        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Your Message</label>
+				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("message")} placeholder="" type="text" id="fmessage" name="fmessage" />
 				    </div>
 				    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorMessage">Please provide place of interest</div>
 				</div>
