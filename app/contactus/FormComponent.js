@@ -57,7 +57,7 @@ export default function FormComponent() {
 	}
 
 	function validateInput() {
-		let errorPropertyRequirement = document.getElementById("errorPropertyRequirement");
+	    let errorPropertyRequirement = document.getElementById("errorPropertyRequirement");
 	    let errorName = document.getElementById("errorName");
 	    let errorEmail = document.getElementById("errorEmail");
 	    let errorPhonenumber = document.getElementById("errorPhonenumber");
@@ -98,14 +98,8 @@ export default function FormComponent() {
 	    }
 
 	    if (!isError) {
-	    	sendEmail(
-	    		fPropertyRequirement.value,
-	    		fname.value,
-	    		femail.value,
-	    		fphonenumber.value,
-	    		flocation.value,
-	    		fMessage.value
-	    	);
+
+		window.centilio_connector_init.submit();
 
 	    	// Making input values empty
 	        fPropertyRequirement.value = 'none'
@@ -121,55 +115,6 @@ export default function FormComponent() {
 	        onInputFocusOut("location");
 	        onInputFocusOut("placeofInterest");
 	    }   
-	}
-
-	function sendEmail(propertyRequirement, name, email, phonenumber, location, placeofIntrest) {
-
-		// const zapikey = process.env.REACT_APP_ZAPIKEY;
-
-		const paramsObject = {
-			full_name: name,
-			email: email,
-			mobile: phonenumber,
-			location: location,
-			place_of_interest: placeofIntrest,
-			property_requirement: propertyRequirement
-		}
-
-		const myHeaders = new Headers();
-		myHeaders.append("Content-Type", "application/json");
-
-		const requestOptions = {
-			method: "POST",
-			headers: myHeaders,
-			body: JSON.stringify(paramsObject),
-			redirect: "follow",
-		};
-
-		// Construct the full URL
-		const url = `https://seobot.centilio.com/vgdsendemail`;
-
-		fetch(url, requestOptions)
-			.then((response) => {
-				if (response.ok) {
-					console.log("✅ Success");
-					return response.text();
-				} else {
-					console.error("❌ Failed with status:", response.status);
-					throw new Error("Request failed");
-				}
-			})
-			.then((result) => {
-
-		        // Opening thank-you modal
-		        openThankYouModal();
-
-				console.log("Result:", result);
-			})
-			.catch((error) => {
-				console.error("❌ Error occurred:", error.message);
-				alert(`Network error or unexpected issue occurred. Please try again. \n ${error.message}`);
-			});
 	}
 
 	function closeThankYouModal() {
