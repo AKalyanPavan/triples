@@ -99,7 +99,7 @@ export default function FormComponent() {
 
 	    if (!isError) {
 
-		window.centilio_connector_init.submit();
+	    	window.centilio_connector_init.submit();
 
 	    	// Making input values empty
 	        fPropertyRequirement.value = 'none'
@@ -114,6 +114,8 @@ export default function FormComponent() {
 	        onInputFocusOut("phoneNumber");
 	        onInputFocusOut("location");
 	        onInputFocusOut("placeofInterest");
+
+	        openThankYouModal();
 	    }   
 	}
 

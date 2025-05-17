@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.jpg" />
-      <head>
-          <script type="text/javascript" src="https://seobot.centilio.com/js/centilio_connector.js"></script>
-          <script type="text/javascript">centilio_connector_init.track(441);</script>
-      </head>
+      <Script type="text/javascript" src="https://seobot.centilio.com/js/centilio_connector.js"></Script>
+      <Script type="text/javascript">{`${centilio_connector_init.track(441)}`}</Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
       >
