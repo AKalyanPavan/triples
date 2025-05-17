@@ -198,21 +198,21 @@ export default function FormComponent() {
 				<div className="">
 				    <div id="fullName" className="flex border-solid border-[1.5px] border-[#00000040] rounded-[5px] h-[50px] items-center hover:border-[#00000040]" onClick={() => onInputClicked("fullName", "errorName")}>
 				        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Your name</label>
-				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("fullName")} placeholder="" type="text" id="fname" name="fname" />
+				        <input className="outline-none mx-[10px] w-[100%] centilio-input-full-name" onBlur={() => onInputFocusOut("fullName")} placeholder="" type="text" id="fname" name="fname" />
 				    </div>
 				    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorName">Name Cannot be Empty</div>
 				</div>
 				<div className="">
 				    <div id="email" className="flex border-solid border-[1.5px] border-[#00000040] rounded-[5px] h-[50px] items-center hover:border-[#00000040]" onClick={() => onInputClicked("email", "errorEmail")}>
 				        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Email Address</label>
-				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("email")} placeholder="" type="text" id="femail" name="femail" />
+				        <input className="outline-none mx-[10px] w-[100%] centilio-input-email" onBlur={() => onInputFocusOut("email")} placeholder="" type="text" id="femail" name="femail" />
 				    </div>
 				    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorEmail">Please provide a valid email</div>
 				</div>
 				<div className="">
 				    <div id="phoneNumber" className="flex border-solid border-[1.5px] border-[#00000040] rounded-[5px] h-[50px] items-center hover:border-[#00000040]" onClick={() => onInputClicked("phoneNumber", "errorPhonenumber")}>
 				        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Phone Number</label>
-				        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("phoneNumber")} placeholder="" type="text" id="fphonenumber" name="fphonenumber" />
+				        <input className="outline-none mx-[10px] w-[100%] centilio-input-mobile" onBlur={() => onInputFocusOut("phoneNumber")} placeholder="" type="text" id="fphonenumber" name="fphonenumber" />
 				    </div>
 				    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorPhonenumber">Please provide valid phone number</div>
 				</div>
