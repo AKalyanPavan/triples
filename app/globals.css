@@ -44,6 +44,7 @@
   --animate-marquee: marquee var(--duration) linear infinite;
   --color-brand-foreground: var(----brand-foreground);
   --color-brand: var(----brand);
+  --animate-gradient: gradient var(--animation-duration, 8s) linear infinite;
 
   @keyframes marquee {
     from {
