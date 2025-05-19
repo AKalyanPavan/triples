@@ -38,14 +38,13 @@ export default function RootLayout({
       >
         <script
               dangerouslySetInnerHTML={{
+                    src: 'https://seobot.centilio.com/js/centilio_connector.js',
                   __html: ``,
-                  src: "https://seobot.centilio.com/js/centilio_connector.js"
               }}
         />
         <script
               dangerouslySetInnerHTML={{
                   __html: `centilio_connector_init.track(441);`,
-                  src: "https://seobot.centilio.com/js/centilio_connector.js"
               }}
         />
         {children}
