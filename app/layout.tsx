@@ -32,11 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
-      >
         <Script id="centilio_connector" src="https://seobot.centilio.com/js/centilio_connector.js"
               dangerouslySetInnerHTML={{
                   __html: ``,
@@ -47,6 +42,10 @@ export default function RootLayout({
                   __html: `centilio_connector_init.track(441);`,
               }}
         />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
+      >
         {children}
       </body>
     </html>
