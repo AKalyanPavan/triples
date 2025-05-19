@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
       >
-        <script type="text/javascript" src="https://seobot.centilio.com/js/centilio_connector.js"></script>
+        <Script type="text/javascript" src="https://seobot.centilio.com/js/centilio_connector.js"></Script>
         <script type="text/javascript">centilio_connector_init.track(441);</script>
         {children}
       </body>
