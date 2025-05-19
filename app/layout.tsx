@@ -32,20 +32,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script id="centilio_connector" src="https://seobot.centilio.com/js/centilio_connector.js"
-              dangerouslySetInnerHTML={{
-                  __html: ``,
-              }}
-        />
         <script
               dangerouslySetInnerHTML={{
-                  __html: `centilio_connector_init.track(441);`,
+                  __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W7NCP52R');`,
               }}
         />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
       >
+        <div dangerouslySetInnerHTML={{
+        __html: `
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7NCP52R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        `
+      }} />
         {children}
       </body>
     </html>
