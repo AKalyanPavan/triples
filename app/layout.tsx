@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 const openSans = Open_Sans({
-   subsets: ['latin'],
-   weight: ['300', '400', '500', '600', '700'],
-   style: ['normal'], // You can add more styles if needed
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal'], // You can add more styles if needed
 });
 
 export const metadata: Metadata = {
@@ -31,11 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script type="text/javascript" src="https://seobot.centilio.com/js/centilio_connector.js"></Script>
-      <script id="centilio-connector" type="text/javascript">centilio_connector_init.track(441)</script>
+      <link rel="icon" href="/favicon.jpg" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
       >
+        <script type="text/javascript" src="https://seobot.centilio.com/js/centilio_connector.js"></script>
+        <script type="text/javascript">centilio_connector_init.track(441);</script>
         {children}
       </body>
     </html>
