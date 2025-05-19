@@ -36,9 +36,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
       >
-        <script
+        <script src="https://seobot.centilio.com/js/centilio_connector.js"
               dangerouslySetInnerHTML={{
-                    src: 'https://seobot.centilio.com/js/centilio_connector.js',
                   __html: ``,
               }}
         />
