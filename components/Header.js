@@ -1,6 +1,4 @@
 "use client";
-
-import React, { useEffect } from 'react';
 import Image from "next/image";
 import logo from '@/images/logo.png';
 import phone from '@/images/phone.svg';
