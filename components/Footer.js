@@ -21,10 +21,8 @@ export default function Footer() {
 					</div>
 					<div className="flex flex-col gap-[24px] sm:w-[300px]">
 						<span className="text-[#1E62AF] font-bold">Product</span>
-						<span>Accounting</span>
-						<span>Risk Management</span>
-						<span>Marketing</span>
-						<span>Financial</span>
+						<span>Residential</span>
+						<span>Commercial</span>
 					</div>
 					<div className="flex flex-col gap-[24px] sm:w-[300px] max-md:col-start-2 max-md:ml-[-20px]">
 						<div className="text-[#1E62AF] font-bold">Contact Us</div>

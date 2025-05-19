@@ -9,15 +9,15 @@ import fold2image4 from "@/images/fold2/fold2image4.svg"
 
 export const fold1 = [
     {
-        title: "high-efficiency solar systems",
+        title: "High-efficiency solar systems",
         imageUrl: fold1image2,
     },
     {
-        title: "guaranteed savings",
+        title: "Guaranteed savings",
         imageUrl: fold1image3,
     },
     {
-        title: "hassle-free ownership",
+        title: "Hassle-free ownership",
         imageUrl: fold1image4,
     },
 ]
