@@ -1,0 +1,27 @@
+# Enable URL rewriting
+RewriteEngine On
+# Set the base URL for rewriting (usually the root of your site)
+RewriteBase /
+
+# 1. Handle direct requests to files and directories (e.g., images, CSS, JS)
+# If the requested path is a file, serve it directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# If the requested path is a directory, serve its index file (e.g., index.html)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. Crucial: Serve .html files when the extension is omitted
+# If a request comes in for /contactus, but contactus.html exists, serve contactus.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# 3. Fallback to index.html for all other requests (Next.js client-side routing)
+# If none of the above rules match, redirect to index.html
+# This allows the Next.js client-side router to handle internal navigation.
+RewriteRule ^ index.html [L]
+
+# Optional: Set a custom 404 page if your server supports it
+# Ensure you have a 404.html file in your 'out' directory
+ErrorDocument 404 /404.html
