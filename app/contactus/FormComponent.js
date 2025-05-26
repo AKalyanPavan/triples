@@ -103,7 +103,7 @@ export default function FormComponent() {
 			window.centilio_connector_init.submit();
 
 			// Making input values empty
-			fPropertyRequirement.value = 'none'
+			fPropertyRequirement.value = 'residential'
 			fname.value = "";
 			femail.value = "";
 			fphonenumber.value = "";
@@ -174,8 +174,7 @@ export default function FormComponent() {
 				<div className="mb-[10px]">
 					<div className="mb-[10px]">Property Type *</div>
 					<select className="border-solid border-[1.5px] border-[#00000040] p-[5px] rounded-[5px] w-full centilio-dropdown centilio-custom-Sub_Type" name="fpropertyrequirement" id="fpropertyrequirement" onClick={() => onSelectClicked("errorPropertyRequirement")}>
-						<option value="villa">Villa</option>
-						<option value="apartment">Apartment</option>
+						<option value="residential">Residential</option>
 						<option value="commercial">Commercial</option>
 					</select>
 					<div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorPropertyRequirement">Please select a property requirement</div>
