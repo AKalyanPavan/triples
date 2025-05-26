@@ -180,7 +180,7 @@ body {
 }
 
 .bgfooter  {
-  background-image: url("@/images/footer-image.png");
+  background-image: url("images/footer-image.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -190,7 +190,7 @@ body {
                   to right,
                   #1E62AFE5, 
                   #E6A42473
-              ), url("@/images/contact-us.png");
+              ), url("images/contact-us.png");
   background-position: center;
   background-repeat: no-repeat;
 }
