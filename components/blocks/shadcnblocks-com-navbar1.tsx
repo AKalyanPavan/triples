@@ -3,7 +3,7 @@
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import phone from '@/images/phone.svg';
-
+declare const window: any;
 import {
   Accordion,
   AccordionContent,
