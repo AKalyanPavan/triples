@@ -8,7 +8,7 @@ export default function BlogGrid() {
 	return(
 		<div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center gap-x-[20px] gap-y-[50px]">
 			{blogs.map((blog, index) => (
-				<div className="max-w-[400px] w-fit">
+				<div className="max-w-[400px] w-fit" key={index}>
 					<Image className="rounded-[10px] mb-[20px]" src={blog.imageUrl} alt={blog.alt} />
 					<div className="flex items-center gap-[30px] text-[#878680] font-semibold">
 						<div className="flex items-center gap-[10px]">
