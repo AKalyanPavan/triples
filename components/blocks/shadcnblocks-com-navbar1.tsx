@@ -3,7 +3,10 @@
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import phone from '@/images/phone.svg';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare const window: any;
+
 import {
   Accordion,
   AccordionContent,
