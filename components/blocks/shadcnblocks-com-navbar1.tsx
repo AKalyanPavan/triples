@@ -1,5 +1,6 @@
 "use client";
 // import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+import { Menu } from "lucide-react";
 import Image from "next/image";
 import phone from '@/images/phone.svg';
 
