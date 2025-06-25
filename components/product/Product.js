@@ -14,9 +14,9 @@ export default function Product() {
 						<div className="text-[20px] leading-[28px] my-[20px] tracking-[2.4px]">Unleash the Power of the Sun – Save More, Live Smarter</div>
 						<div className="text-[#878680] leading-[28px]">Our TATA Power Residential Solar Rooftop Systems are built for long-term savings, superior performance, and effortless monitoring.</div>
 						<a href="/contactus" target="_blank">
-							<div id="bookVisitNowButton" className="book-visit-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] rounded-[5px] cursor-pointer sm:text-[18px] font-medium mt-[30px]">
+							<div id="bookVisitNowButton" className="book-visit-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] cursor-pointer sm:text-[18px] font-medium mt-[30px] rounded-l-full rounded-r-full">
 								<span className="text-[#ffffff] ml-[10px] font-semibold">
-									<span>Get Started Today</span>
+									<span>Contact Us</span>
 								</span>
 							</div>
 						</a>
