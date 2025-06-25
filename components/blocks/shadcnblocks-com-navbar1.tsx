@@ -46,16 +46,16 @@ interface Navbar1Props {
     name: string;
     url: string;
   }[];
-  auth?: {
-    login: {
-      text: string;
-      url: string;
-    };
-    signup: {
-      text: string;
-      url: string;
-    };
-  };
+  // auth?: {
+  //   login: {
+  //     text: string;
+  //     url: string;
+  //   };
+  //   signup: {
+  //     text: string;
+  //     url: string;
+  //   };
+  // };
 }
 
 const Navbar1 = ({
@@ -143,10 +143,10 @@ const Navbar1 = ({
     { name: "Imprint", url: "#" },
     { name: "Sitemap", url: "#" },
   ],
-  auth = {
-    login: { text: "Log in", url: "#" },
-    signup: { text: "Sign up", url: "#" },
-  },
+  // auth = {
+  //   login: { text: "Log in", url: "#" },
+  //   signup: { text: "Sign up", url: "#" },
+  // },
 }: Navbar1Props) => {
   return (
     <section className="py-4">
