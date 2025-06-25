@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Open_Sans, Exo } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,6 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal'], // You can add more styles if needed
+});
+
+const exo = Exo({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   style: ['normal'], // You can add more styles if needed
@@ -100,7 +106,7 @@ export default function RootLayout({
         {/* End Meta Pixel Code */}
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${openSans} ${exo} antialiased`}
       >
         {/* Google Tag Manager (noscript) */}
         <script dangerouslySetInnerHTML={{
