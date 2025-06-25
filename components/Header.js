@@ -1,5 +1,4 @@
 import logo from '@/images/logo.png';
-import { Book, Sunset, Trees, Zap } from "lucide-react";
 
 import { Navbar1 } from "@/components/blocks/shadcnblocks-com-navbar1"
 
