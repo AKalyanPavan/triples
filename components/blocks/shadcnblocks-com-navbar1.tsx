@@ -38,7 +38,7 @@ interface MenuItem {
 interface Navbar1Props {
   logo?: {
     url: string;
-    src: object;
+    src: string;
     alt: string;
     title: string;
   };
@@ -62,7 +62,7 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "https://www.shadcnblocks.com",
-    src: {},
+    src: '',
     alt: "logo",
     title: "",
   },
