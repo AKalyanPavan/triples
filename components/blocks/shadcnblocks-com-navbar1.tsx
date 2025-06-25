@@ -1,5 +1,5 @@
 "use client";
-import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+// import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
 import Image from "next/image";
 import phone from '@/images/phone.svg';
 
@@ -30,7 +30,7 @@ interface MenuItem {
   title: string;
   url: string;
   description?: string;
-  icon?: JSX.Element;
+  // icon?: JSX.Element;
   items?: MenuItem[];
 }
 
@@ -74,26 +74,26 @@ const Navbar1 = ({
         {
           title: "Blog",
           description: "The latest industry news, updates, and info",
-          icon: <Book className="size-5 shrink-0" />,
+          // icon: <Book className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Company",
           description: "Our mission is to innovate and empower the world",
-          icon: <Trees className="size-5 shrink-0" />,
+          // icon: <Trees className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Careers",
           description: "Browse job listing and discover our workspace",
-          icon: <Sunset className="size-5 shrink-0" />,
+          // icon: <Sunset className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Support",
           description:
             "Get in touch with our support team or visit our community forums",
-          icon: <Zap className="size-5 shrink-0" />,
+          // icon: <Zap className="size-5 shrink-0" />,
           url: "#",
         },
       ],
@@ -105,25 +105,25 @@ const Navbar1 = ({
         {
           title: "Help Center",
           description: "Get all the answers you need right here",
-          icon: <Zap className="size-5 shrink-0" />,
+          // icon: <Zap className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Contact Us",
           description: "We are here to help you with any questions you have",
-          icon: <Sunset className="size-5 shrink-0" />,
+          // icon: <Sunset className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Status",
           description: "Check the current status of our services and APIs",
-          icon: <Trees className="size-5 shrink-0" />,
+          // icon: <Trees className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Terms of Service",
           description: "Our terms and conditions for using our services",
-          icon: <Book className="size-5 shrink-0" />,
+          // icon: <Book className="size-5 shrink-0" />,
           url: "#",
         },
       ],
@@ -268,7 +268,7 @@ const renderMenuItem = (item: MenuItem) => {
                     className="flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-accent-foreground"
                     href={subItem.url}
                   >
-                    {subItem.icon}
+                    
                     <div>
                       <div className="text-sm font-semibold">
                         {subItem.title}
@@ -314,7 +314,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
               className="flex select-none gap-4 rounded-md p-3 leading-none outline-none transition-colors hover:bg-muted hover:text-accent-foreground"
               href={subItem.url}
             >
-              {subItem.icon}
+              
               <div>
                 <div className="text-sm font-semibold">{subItem.title}</div>
                 {subItem.description && (
