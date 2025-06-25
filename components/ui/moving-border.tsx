@@ -55,7 +55,6 @@ export function Button({
           />
         </MovingBorder>
       </div>
-
       <div
         className={cn(
           "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
@@ -85,10 +84,9 @@ export const MovingBorder = ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const pathRef = useRef<any>(0);
+  const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue<number>(0);
-
+  
   useAnimationFrame((time) => {
     const length = pathRef.current?.getTotalLength();
     if (length) {
@@ -96,7 +94,7 @@ export const MovingBorder = ({
       progress.set((time * pxPerMillisecond) % length);
     }
   });
-
+  
   const x = useTransform(
     progress,
     (val) => pathRef.current?.getPointAtLength(val).x
@@ -105,9 +103,8 @@ export const MovingBorder = ({
     progress,
     (val) => pathRef.current?.getPointAtLength(val).y
   );
-
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
-
+  
   return (
     <>
       <svg
