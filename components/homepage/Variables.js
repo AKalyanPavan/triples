@@ -1,11 +1,11 @@
-import fold1image2 from "@/images/fold1/fold1image2.svg"
-import fold1image3 from "@/images/fold1/fold1image3.svg"
-import fold1image4 from "@/images/fold1/fold1image4.svg"
+import fold1image2 from "@/images/home/fold1/fold1image2.svg"
+import fold1image3 from "@/images/home/fold1/fold1image3.svg"
+import fold1image4 from "@/images/home/fold1/fold1image4.svg"
 
-import fold2image1 from "@/images/fold2/fold2image1.svg"
-import fold2image2 from "@/images/fold2/fold2image2.svg"
-import fold2image3 from "@/images/fold2/fold2image3.svg"
-import fold2image4 from "@/images/fold2/fold2image4.svg"
+import fold2image1 from "@/images/home/fold2/fold2image1.svg"
+import fold2image2 from "@/images/home/fold2/fold2image2.svg"
+import fold2image3 from "@/images/home/fold2/fold2image3.svg"
+import fold2image4 from "@/images/home/fold2/fold2image4.svg"
 
 export const fold1 = [
     {

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { GradientText } from "@/components/ui/gradient-text"
 
-import fold1image1 from "@/images/fold1/fold1image1.png"
+import fold1image1 from "@/images/home/fold1/fold1image1.png"
 import { fold1 } from "./Variables.js"
 
 export default function Fold1() {
@@ -16,7 +16,7 @@ export default function Fold1() {
 					Empowering Tamil Nadu with Smarter Solar Solutions
 				</GradientText>
 				<a href="/contactus" target="_blank">
-					<div className="call-us-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] rounded-[5px] cursor-pointer sm:text-[18px] font-medium my-[50px]">
+					<div id="bookVisitNowButton" className="book-visit-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] rounded-[5px] cursor-pointer sm:text-[18px] font-medium my-[50px]">
 						<span className="text-[#ffffff] ml-[10px] font-semibold">
 							<span>Get Started Today</span>
 						</span>

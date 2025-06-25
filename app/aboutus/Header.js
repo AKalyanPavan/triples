@@ -42,7 +42,7 @@ const demoData = {
 
 function Header() {
   return (
-    <div className="bg-[#ffffff] top-[0px] sticky z-[5]">
+    <div className="bg-[#ffffff] top-[0px] sticky z-5">
       <Navbar1 {...demoData} />
     </div>
   )

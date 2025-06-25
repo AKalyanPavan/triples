@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { BackgroundPaths } from "@/components/ui/background-paths"
 
-import fold4image1 from "@/images/fold4/fold4image1.png"
+import fold4image1 from "@/images/home/fold4/fold4image1.png"
 
 export default function Fold4() {
 	return(

@@ -1,6 +1,6 @@
 import Image from "next/image"
-import HeadingMultiColour from './HeadingMultiColour.js'
-import fold3image1 from '@/images/fold3/fold3image1.png'
+import HeadingMultiColour from '@/components/HeadingMultiColour.js'
+import fold3image1 from '@/images/home/fold3/fold3image1.png'
 
 export default function fold3() {
 	return(

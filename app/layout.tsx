@@ -58,9 +58,43 @@ export default function RootLayout({
                           fbq('track', 'PageView');`,
               }}
         />
-        <noscript 
+        <script 
               dangerouslySetInnerHTML={{
-                  __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1950692668999988&ev=PageView&noscript=1" />`
+                  __html: `
+                    // Trigger the custom event for phone call click
+                    window.addEventListener("load", (event) => {
+                      // Trigger the custom event for booking a visit
+                      console.log('test2323');
+                      document.querySelector('.book-visit-button').addEventListener('click', function() {
+                        fbq('track', 'CompleteRegistration', {
+                          content_name: 'Exclusive Site Visit',
+                          content_type: 'service',
+                          value: 0,  // You can update this value if there's a monetary cost for booking
+                          currency: 'INR', // Replace with your currency if needed
+                          action: 'Book Visit'
+                        });
+                      });
+
+                      // Trigger the custom event for phone call click
+                      document.querySelector('.call-us-button').addEventListener('click', function() {
+                        fbq('track', 'Contact', {
+                          content_name: 'Call Us',
+                          content_type: 'contact',
+                          action: 'Phone Call Clicked',
+                          value: 0,  // No direct monetary value, but you can update if needed
+                          currency: 'INR' // Replace with your currency
+                        });
+                      });
+                    });
+                  `
+              }} 
+        />
+        <script 
+              dangerouslySetInnerHTML={{
+                  __html: `
+                    <noscript><img height="1" width="1" style="display:none"
+                    src="https://www.facebook.com/tr?id=1950692668999988&ev=PageView&noscript=1"
+                    /></noscript>`
               }} 
         />
         {/* End Meta Pixel Code */}
@@ -69,9 +103,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${openSans} antialiased`}
       >
         {/* Google Tag Manager (noscript) */}
-        <noscript dangerouslySetInnerHTML={{
-                  __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7NCP52R"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+        <script dangerouslySetInnerHTML={{
+                  __html: `
+                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7NCP52R"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`
               }} 
         />
         {/* End Google Tag Manager (noscript) */}
