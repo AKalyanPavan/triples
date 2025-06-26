@@ -89,7 +89,7 @@ export default function AboutUs() {
 				<div className="bg-[#FFFFFF] md:px-[100px] px-[20px] py-[30px] max-w-[900px] mx-auto rounded-[20px] text-center">
 					<HeadingMultiColour customStyle="sm:text-[48px] text-[32px] font-semibold" textLeft="Join Us " textRight="on Our Journey" />
 					<div className="text-[#878680] my-[30px]">
-						At Triples Solar, we invite you to explore our products, discover our team, and join us in shaping a sustainable future. Whether you're interested in residential solar solutions or commercial solar solutions,we are here to help you make the change to renewable energy.
+						At Triples Solar, we invite you to explore our products, discover our team, and join us in shaping a sustainable future. Whether you&apos;re interested in residential solar solutions or commercial solar solutions, we are here to help you make the change to renewable energy.
 					</div>
 					<a href="/contactus" target="_blank">
 						<div id="bookVisitNowButton" className="book-visit-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] cursor-pointer sm:text-[18px] font-medium mt-[30px] rounded-l-full rounded-r-full mx-auto">
