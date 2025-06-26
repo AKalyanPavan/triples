@@ -23,11 +23,7 @@ export default function ContactUs() {
 				</div>
 				<FormSection />
 			</div>
-			<div className="bg-[#E6A4240D]">
-				<div className="bgfooter max-w-[1300px] mx-auto sm:px-[50px] px-[20px] font-['Open_Sans']">
-					<Footer />
-				</div>
-			</div>
+			<Footer />
 		</>
 	)
 }
