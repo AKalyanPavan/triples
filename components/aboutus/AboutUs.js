@@ -62,7 +62,7 @@ export default function AboutUs() {
 				<HeadingMultiColour customStyle="sm:text-[48px] text-[32px] font-semibold text-center" textLeft="Our " textRight="Values" />
 				{/* <OurValues /> */}
 				<div className="mt-[20px] mx-auto">
-					<FeaturesSectionWithHoverEffects features={values} customClass="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl" />
+					<FeaturesSectionWithHoverEffects features={values} customClass="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[950px]" />
 				</div>
 			</section>
 			<section className="mx-auto max-w-[1300px] mx-auto sm:px-[50px] px-[20px] my-[100px]">
