@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import HeadingMultiColour from "@/components/HeadingMultiColour.js"
-
+// import { OurValues } from "@/components/aboutus/OurValues.js"
 import { Header } from "@/components/Header.js"
 import Footer from "@/components/Footer.js"
 import VisionMission from "./VisionMission.js"
@@ -10,7 +10,33 @@ import fold4image1 from '@/images/aboutus/fold4image1.png';
 import grid from "@/images/grid.png"
 import employee from "@/images/aboutus/employee.png"
 
+import fold3image1 from "@/images/aboutus/fold3image1.svg";
+import fold3image2 from "@/images/aboutus/fold3image2.svg";
+import fold3image3 from "@/images/aboutus/fold3image3.svg";
+
+import { FeaturesSectionWithHoverEffects } from "@/components/blocks/feature-section-with-hover-effects";
+
 export default function AboutUs() {
+	const values = [
+	    {
+	        title: "Innovation",
+	        description: "We continuously push the boundaries of technology to provide solutions that exceed customer expectations.",
+	        icon: fold3image1,
+	        index: 1,
+	    },
+	    {
+	        title: "Integrity",
+	        description: "We prioritize honesty and transparency in all our dealings, ensuring trust and reliability.",
+	        icon: fold3image2,
+	        index: 2,
+	    },
+	    {
+	        title: "Impact",
+	        description: "We believe in creating products that make a real difference in the world, from saving energy costs to promoting a greener future.",
+	        icon: fold3image3,
+	        index: 3,
+	    },
+	]
 	return(
 		<>
 			<Header />
@@ -31,6 +57,13 @@ export default function AboutUs() {
 			</div>
 			<section className="mx-auto max-w-[1300px] mx-auto sm:px-[50px] px-[20px] my-[100px]">
 				<VisionMission />
+			</section>
+			<section className="mx-auto max-w-[1300px] mx-auto sm:px-[50px] px-[20px] my-[100px]">
+				<HeadingMultiColour customStyle="sm:text-[48px] text-[32px] font-semibold text-center" textLeft="Our " textRight="Values" />
+				{/* <OurValues /> */}
+				<div className="mt-[20px] mx-auto">
+					<FeaturesSectionWithHoverEffects features={values} customClass="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl" />
+				</div>
 			</section>
 			<section className="mx-auto max-w-[1300px] mx-auto sm:px-[50px] px-[20px] my-[100px]">
 				<div className="flex items-center gap-15">
