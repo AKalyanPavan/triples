@@ -2,14 +2,9 @@ import logo from '@/images/logo.png';
 
 import { Navbar1 } from "@/components/blocks/shadcnblocks-com-navbar1"
 
-const demoData = {
-  logo: {
-    url: "/",
-    src: logo,
-    alt: "blocks for shadcn/ui",
-    title: "",
-  },
-  menu: [
+function Header({isLandingPage = false}) {
+
+  const menuItems = !isLandingPage ? [
     {
       title: "Home",
       url: "/",
@@ -30,16 +25,24 @@ const demoData = {
       title: "Contact",
       url: "/contactus",
     },
-  ],
-  mobileExtraLinks: [
-  ],
-  auth: {
-    login: { text: "Log in", url: "/login" },
-    signup: { text: "Sign up", url: "/signup" },
-  },
-};
+  ] : [];
 
-function Header() {
+  const demoData = {
+    logo: {
+      url: "/",
+      src: logo,
+      alt: "blocks for shadcn/ui",
+      title: "",
+    },
+    menu: menuItems,
+    mobileExtraLinks: [
+    ],
+    auth: {
+      login: { text: "Log in", url: "/login" },
+      signup: { text: "Sign up", url: "/signup" },
+    },
+  };
+
   return (
     <div className="bg-[#ffffff] top-[0px] sticky z-[5]">
       <Navbar1 {...demoData} />
