@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { GradientText } from "@/components/ui/gradient-text"
 import HeadingMultiColour from "@/components/HeadingMultiColour.js"
 import fold1image1 from "@/images/landingpage2/fold1image1.png"
 // import { fold1 } from "./Variables.js"

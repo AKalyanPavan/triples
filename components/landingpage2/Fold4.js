@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import doubleQuote from "@/images/landingpage2/double-quote.svg"
-import { fold2 } from "./Variables.js"
 
 export default function Fold4() {
 	return(
