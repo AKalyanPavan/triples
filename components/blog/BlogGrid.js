@@ -3,9 +3,7 @@ import calendar from '@/images/blog/calendar.svg';
 import person from '@/images/blog/person.svg';
 import { Button } from "@/components/ui/moving-border";
 
-export default function BlogGrid({ showAllBlogs = false, blogs }) {
-
-	// const blogsToShow = showAllBlogs ? blogs : blogs.slice(0, 6);
+export default function BlogGrid({ blogs }) {
 	const blogsToShow = blogs;
 
 	const formatDate = (dateString, outputFormat = 'YYYY-MM-DD') => {
