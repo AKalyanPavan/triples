@@ -5,7 +5,7 @@ import { fold3 } from "./Variables.js"
 export default function Fold2() {
 	return(
 		<div className="mt-[50px] mb-[100px]">
-			<HeadingMultiColour customStyle="md:text-[36px] text-[32px] font-semibold text-center" textLeft="Here's Why " textRight="You Should Make the Switch" />
+			<HeadingMultiColour customStyle="md:text-[36px] text-[32px] font-semibold text-center" textLeft="Key Benefits " textRight="of Solar for Your Business" />
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-15">
 		        {fold3.map((item, index) => (
 					<div 

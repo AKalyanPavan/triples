@@ -6,10 +6,10 @@ import Fold3 from "./Fold3.js"
 import Fold4 from "./Fold4.js"
 import Fold5 from "./Fold5.js"
 
-export default function LandingPage1() {
+export default function ResidentialLandingPage2() {
 	return(
 		<div className="font-['Open_Sans']">
-			<Header />
+			<Header isLandingPage={true} />
 			<div className="max-w-[1300px] mx-auto sm:px-[50px] px-[20px]">
 				<Fold1 />
 				<Fold2 />

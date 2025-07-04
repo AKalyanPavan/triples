@@ -1,6 +1,7 @@
 import Image from "next/image"
-import HeadingMultiColour from "@/components/HeadingMultiColour.js"
-import fold1image1 from "@/images/landingpage2/fold1image1.png"
+import { GradientText } from "@/components/ui/gradient-text"
+
+import fold1image1 from "@/images/home/fold1/fold1image1.png"
 // import { fold1 } from "./Variables.js"
 
 export default function Fold1() {
@@ -8,9 +9,18 @@ export default function Fold1() {
 		<div className="py-[100px]">
 			<div className="flex items-center gap-[50px]">
 				<div className="min-[1100px]:w-[640px] w-full">
-					<HeadingMultiColour customStyle="lg:text-[48px] md:text-[36px] text-[24px] font-semibold" textLeft="Power Your Business. Grow Your Profits. " textRight="Go Solar with Tata Power" />
+					<GradientText
+						colors={["#E6A424", "#E6A424", "#1E62AF", "#1E62AF", "#1E62AF"]}
+						animationSpeed={3}
+						className="md:text-[36px] text-[32px] font-semibold sm:leading-[50px] mb-[30px]"
+					>
+						Empower Your Business with Solar Energy – Save Big with Tata Power Solar
+					</GradientText>
+					<div className="text-[20px] leading-[28px] my-3 tracking-[2.4px]">
+						Start with Just ₹1 and Slash Your Business's Energy Costs by 70%!
+					</div>
 					<div className="text-[#50411B] font-medium my-[30px] leading-[28px] text-[16px]">
-						As a tech-savvy professional, you understand the value of smart investments. Triples Energy is here to help you make the most intelligent financial decision yet – switch to solar with Tata Power Solar under the PM Surya Ghar: Muft Bijli Yojana.
+						As a business owner, you know that controlling operational costs is critical to your success. Triples Energy offers you the chance to do just that – with Tata Power Solar – a powerful, cost-effective solution to dramatically reduce your energy bills and increase profitability.
 					</div>
 					<a href="/contactus" target="_blank">
 						<div id="bookVisitNowButton" className="book-visit-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] rounded-[5px] cursor-pointer sm:text-[18px] font-medium">
