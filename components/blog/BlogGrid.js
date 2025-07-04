@@ -68,7 +68,7 @@ export default function BlogGrid({ blogs }) {
 						</div>
 					</div>
 					<div className="text-[#1E62AF] my-[20px] text-[18px] font-semibold w-full">{blog.Title}</div>
-					<a target="_blank" href={blog.Slug_Url}>
+					<a target="_blank" href={`/blog-detail?slug=${blog.Slug}`}>
 						<Button
 					        borderRadius="1rem"
 					        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
