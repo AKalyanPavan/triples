@@ -165,7 +165,7 @@ export default function Blog() {
   
   // API configuration
   const API_BASE_URL = 'https://seobot.centilio.com/blog';
-  const ORG_ID = 5;
+  const ORG_ID = 441;
   const BLOGS_PER_PAGE = 6;
   
   // Calculate total pages based on API response
