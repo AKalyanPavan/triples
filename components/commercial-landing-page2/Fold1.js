@@ -1,6 +1,6 @@
 import Image from "next/image"
 import HeadingMultiColour from "@/components/HeadingMultiColour.js"
-import fold1image1 from "@/images/commercial-landing-page1/fold1image1.png"
+import fold1image1 from "@/images/commercial-landing-page2/fold1image1.png"
 // import { fold1 } from "./Variables.js"
 
 export default function Fold1() {
@@ -8,9 +8,9 @@ export default function Fold1() {
 		<div className="py-[100px]">
 			<div className="flex items-center gap-[50px]">
 				<div className="min-[1100px]:w-[640px] w-full">
-					<HeadingMultiColour customStyle="lg:text-[48px] md:text-[36px] text-[24px] font-semibold" textLeft="Power Your Business. Grow Your Profits. " textRight="Go Solar with Tata Power" />
+					<HeadingMultiColour customStyle="lg:text-[48px] md:text-[36px] text-[24px] font-semibold" textLeft="Reliable Power. Greener Operations. " textRight="Lower Costs." />
 					<div className="text-[#50411B] font-medium my-[30px] leading-[28px] text-[16px]">
-						Stop paying high electricity bills. Cut diesel costs. Enjoy reliable, clean energy with India’s most trusted solar brand. Tata Power Solar’s Commercial & Industrial (C&I) solutions deliver end-to-end, hassle-free solar power for energy-intensive operations of all kinds.
+						Rising electricity bills and diesel expenses don’t have to be the cost of doing business. Switch to clean, dependable solar power with India’s most trusted energy partner. Tata Power Solar delivers end-to-end rooftop solar solutions for facilities that demand uninterrupted, cost-effective, and sustainable power.
 					</div>
 					<a href="/contactus" target="_blank">
 						<div id="bookVisitNowButton" className="book-visit-button bg-[#E6A424] w-fit flex items-center py-[10px] px-[50px] rounded-[5px] cursor-pointer sm:text-[18px] font-medium">
