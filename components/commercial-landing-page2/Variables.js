@@ -11,7 +11,6 @@ import fold5image2 from "@/images/commercial-landing-page2/fold5image2.png"
 import fold5image3 from "@/images/commercial-landing-page2/fold5image3.png"
 import fold5image4 from "@/images/commercial-landing-page2/fold5image4.png"
 import fold5image5 from "@/images/commercial-landing-page2/fold5image5.png"
-import fold5image6 from "@/images/commercial-landing-page2/fold5image6.png"
 
 import fold8image1 from "@/images/commercial-landing-page2/fold8image1.svg"
 import fold8image2 from "@/images/commercial-landing-page2/fold8image2.svg"
