@@ -37,6 +37,7 @@ export default function BlogDetailContent() {
             } catch (err) {
                 console.error('Error fetching blog content:', err);
                 setError(err.message);
+                alert(error);
                 
                 // Display error in the blog-parent div
                 const blogParent = document.getElementById('blog-parent');
