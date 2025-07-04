@@ -17,7 +17,7 @@ export default function Fold1() {
 						Empower Your Business with Solar Energy – Save Big with Tata Power Solar
 					</GradientText>
 					<div className="text-[20px] leading-[28px] my-3 tracking-[2.4px]">
-						Start with Just ₹1 and Slash Your Business's Energy Costs by 70%!
+						Start with Just ₹1 and Slash Your Business&apos;s Energy Costs by 70%!
 					</div>
 					<div className="text-[#50411B] font-medium my-[30px] leading-[28px] text-[16px]">
 						As a business owner, you know that controlling operational costs is critical to your success. Triples Energy offers you the chance to do just that – with Tata Power Solar – a powerful, cost-effective solution to dramatically reduce your energy bills and increase profitability.
