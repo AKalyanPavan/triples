@@ -1,6 +1,7 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { Suspense } from 'react';
 
 export default function Home() {
     const searchParams = useSearchParams();
@@ -57,15 +58,17 @@ export default function Home() {
     }, [slug]);
 
     return (
-        <div className="relative container mx-auto max-w-[1300px] mx-auto sm:px-[50px] px-[20px]">
-            {loading && (
-                <div className="flex justify-center items-center py-8">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        <Suspense>
+            <div className="relative container mx-auto max-w-[1300px] mx-auto sm:px-[50px] px-[20px]">
+                {loading && (
+                    <div className="flex justify-center items-center py-8">
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+                    </div>
+                )}
+                <div id="blog-parent">
+                    {/* Content will be dynamically inserted here */}
                 </div>
-            )}
-            <div id="blog-parent">
-                {/* Content will be dynamically inserted here */}
             </div>
-        </div>
+        </Suspense>
     );
 }
