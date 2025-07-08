@@ -22,6 +22,10 @@ function Header({isLandingPage = false}) {
       url: "/blog",
     },
     {
+      title: "Careers",
+      url: "/careers",
+    },
+    {
       title: "Contact",
       url: "/contactus",
     },
