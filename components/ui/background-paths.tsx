@@ -70,8 +70,7 @@ export function BackgroundPaths({
                     transition={{ duration: 2 }}
                     className="max-w-4xl mx-auto"
                 >
-                    <div className="sm:text-[48px] text-[32px] font-bold mb-8 tracking-tighter text-transparent bg-clip-text 
-                                        bg-gradient-to-r from-[#E6A424] from-[30%] to-[#1E62AF] to-[70%]">
+                    <div className="sm:text-[48px] text-[32px] font-bold mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#E6A424] from-[30%] to-[#1E62AF] to-[70%]">
                         {words.map((word, wordIndex) => (
                             <span
                                 key={wordIndex}

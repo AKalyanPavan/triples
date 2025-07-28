@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/images/logo.png";
 import phone from "@/images/footer/phone.svg"
 import mail from "@/images/footer/mail.svg"
@@ -16,48 +17,51 @@ export default function Footer() {
 						<div className="grid lg:grid-cols-3 grid-cols-2 md:gap-x-[0px] gap-y-[50px] font-normal text-[14px] justify-items-center">
 							<div className="flex flex-col gap-[24px] sm:w-[300px]">
 								<span className="text-[#1E62AF] font-bold">Links</span>
-								<a href="/aboutus">
+								<Link href="/aboutus">
 									<span>About Us</span>
-								</a>
-								<a href="/product">
+								</Link>
+								<Link href="/product">
 									<span>Product</span>
-								</a>
-								<a href="/blog">
+								</Link>
+								<Link href="/blog">
 									<span>Blog</span>
-								</a>
-								<a href="/contactus">
+								</Link>
+								<Link href="/careers">
+									<span>Careers</span>
+								</Link>
+								<Link href="/contactus">
 									<span>Contact</span>
-								</a>
+								</Link>
 							</div>
 							<div className="flex flex-col gap-[24px] sm:w-[300px]">
 								<span className="text-[#1E62AF] font-bold">Product</span>
-								<a href="/residential-landing-page1">
+								<Link href="/residential-landing-page1">
 									<span>Residential</span>
-								</a>
-								<a href="/commercial-landing-page1">
+								</Link>
+								<Link href="/commercial-landing-page1">
 									<span>Commercial</span>
-								</a>
+								</Link>
 							</div>
 							<div className="flex flex-col gap-[24px] sm:w-[300px] max-md:col-start-2 max-md:ml-[-20px]">
 								<div className="text-[#1E62AF] font-bold">Contact Us</div>
-								<a href="tel:+91 7418059444">
+								<Link href="tel:+91 7418059444">
 									<div className="flex items-start gap-[20px]">
 										<Image className="w-[20px] h-[20px]" src={phone} alt="Phone" />
 										<span>+91 74180 59444</span>
 									</div>
-								</a>
-								<a href="mailto: salescbe@triplesev.com">
+								</Link>
+								<Link href="mailto: salescbe@triplesev.com">
 									<div className="flex items-start gap-[20px]">
 										<Image className="w-[20px] h-[20px]" src={mail} alt="Mail" />
 										<span>salescbe@triplesev.com</span>
 									</div>
-								</a>
-								<a href="mailto: salescbe@triplesev.com">
+								</Link>
+								<Link href="mailto: salescbe@triplesev.com">
 									<div className="flex items-start gap-[20px]">
 										<Image className="w-[20px] h-[20px]" src={location} alt="Location" />
 										<span>No.149, Avinashi Road, Hopes College, Peelamedu post, CBE - 641 004</span>
 									</div>
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
